@@ -1,158 +1,461 @@
 <!DOCTYPE html>
-<html>
-<title>Mr. Jones' Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body class="w3-content" style="max-width:1300px">
+<html lang="en">
 
-<!-- First Grid: Logo & About -->
-<div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64">
-      <h1>Donte Jones</h1>
-    </div>
-    <div class="w3-padding-64">
-      <a href="https://sites.google.com/dublinschools.net/dontejones" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">School Site (Google Example)</a>
-      <a href="https://github.com/TollesDJones" class="w3-button w3-black w3-block w3-hover-teal w3-padding-16">GitHub</a>
-      <a href="https://dontejones.itch.io/" class="w3-button w3-black w3-block w3-hover-dark-grey w3-padding-16">itch.io</a>
-      <a href="http://dublin.schoology.com" class="w3-button w3-black w3-block w3-hover-brown w3-padding-16">Schoology</a>
-    </div>
-  </div>
-  <div class="w3-half w3-blue-grey w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-center">
-      <h1>About Me</h1>
-      <img src="images/avatar.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
-      <div class="w3-left-align w3-padding-large">
-        <p>I am the instructor for the IT Academy at Emerald Campus.</p>
-        <p>IT Academy allows students explore software development through a combination of courses in programming languages, web-design, databases, and more with the opportunity to earn college credit.</p>
-      </div>
-    </div>
-  </div>
-</div>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<!-- Second Grid: Work & Resume -->
-<div class="w3-row">
-  <div class="w3-half w3-light-grey w3-center" style="min-height:800px" id="work">
-    <div class="w3-padding-64">
-      <h2>Interests</h2>
-      <p>Things I enjoy outside of IT Academy.</p>
-    </div>
-    <div class="w3-row">
-      <div class="w3-half">
-        <img src="images/games.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="images/engine.jpg" style="width:100%">
-      </div>
-    </div>
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="images/making.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="images/robot.jpg" style="width:100%">
-      </div>
-    </div>
+  <title>MyResume Bootstrap Template - Index</title>
+  <meta name="description" content="This is the resume for Donte Jones a Career Tech Education Teacher in Ohio">
+  <meta name="keywords"content="Information Technology" >
+  <meta name="author" content="Donte Jones">
 
-    <div class="w3-row w3-hide-small">
-      <div class="w3-half">
-        <img src="images/skate.jpg" style="width:100%">
-      </div>
-      <div class="w3-half">
-        <img src="images/mavic.jpg" style="width:100%">
-      </div>
-    </div><br>
-  </div>
-  <div class="w3-half w3-indigo w3-container" style="min-height:800px">
-    <div class="w3-padding-64 w3-center">
-      <h2>What I do?</h2>
-      <p>A short history</p>
-      <div class="w3-container w3-responsive">
-        <table class="w3-table">
-          <tr>
-            <th>Year</th>
-            <th>Title</th>
-            <th>Where</th>
-          </tr>
-          <tr class="w3-white">
-            <td>2018-Current</td>
-            <td>Career Tech Teacher Dublin City | Tolles Tech</td>
-            <td>Dublin | Emerald Campus</td>
-          </tr>
-          <tr>
-            <td>2018-Current</td>
-            <td>Adjunct Professor for Columbus State Community College</td>
-            <td>Dublin</td>
-          </tr>
-          <tr class="w3-white">
-            <td>2008-2018</td>
-            <td>Educational Technology Dept.</td>
-            <td>Dublin City</td>
-          </tr>
-          <tr>
-            <td>2021</td>
-            <td>Master of Arts</td>
-            <td>The Ohio State University</td>
-          </tr>
-          <tr class="w3-white">
-            <td>2017</td>
-            <td>Bachelor of Science</td>
-            <td>Wilberforce University</td>
-          </tr>
-          <tr>
-            <td>2005</td>
-            <td>Associates of Science</td>
-            <td>Columbus State CC</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<!-- Third Grid: Swing By & Contact -->
-<div class="w3-row" id="contact">
-  <div class="w3-half w3-dark-grey w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64">
-      <h1>Swing By</h1>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  Author: Donte Jones 
+  Date: 2022
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <!--<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li> -->
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Dont&eacute; Jones</h1>
+      <p>&gt; <span class="typed" data-typed-items="Educator, Developer, Maker"></span></p>
+      <div class="social-links">
+        <a href="https://github.com/TollesDJones" class="instagram"><i class="bx bxl-github"></i></a>
+        <a href="https://discordapp.com/users/511710226223857684" class="google-plus"><i class="bx bxl-discord"></i></a>
+        <a href="http://www.linkedin.com/in/donte-jones-1573411a0" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
-    <div class="w3-padding-64">
-      <p>..to talk, or whatever.</p>
-      <p>Dublin, OH</p>
-      <p>jones_donte@dublinschools.net</p>
-      <p>Looking forward to bringing creativity, and problem-solving solutions to students.
-         Passionate about creating lifelong learners by providing a safe and supportive environment
-          that fosters collective responsibility for each student’s success.</p>
-    </div>
-  </div>
-  <div class="w3-half w3-teal w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-padding-large">
-      <h1>Contact</h1>
-      <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="mailto:jones_donte@dublinschools.net" method="post" enctype="text/plain" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Name">
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Instructor of the IT Academy program at Dublin’s Emerald Campus. Experienced in providing hands-on authentic learning experiences for all students. Focused on information technology, application development, iterative design, and leadership. </p>
         </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Email">
-        </div>
-        <div class="w3-section">
-          <label>Message</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="Message">
-        </div>
-        <button type="submit" class="w3-button w3-teal w3-right">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16">
-  <p>All Rights Reserved Mr. Jones</a></p>
-</footer>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Career Tech &amp; Software Development Educator.</h3>
+            <p class="fst-italic">
+              Providing learners with the skills necessary to develop, debug, test, and modify software applications using object-oriented programming languages (OOP).
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Grades Taught:</strong> <span>10th-12th &amp; Higher Ed.</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://www.dublinschools.net/Page/1378</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>614.761.5857</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Dublin, Ohio</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Specialization:</strong> <span>	Workforce Development &amp; CTE</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Masters</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Jones_Donte@DublinSchools.Net</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Career Tech Education Teacher with a background in Educational Technology, Tech Integration, and hardware/ software troubleshooting, 
+              device repair, and software development. Proﬁcient with electronic hardware development boards such as Arduino, Raspberry PI, and Micro: Bit. 
+              Experience in both Solid and Surface Modeling software such as Solid Works, Fusion 360, Blender, and 3D Printing. 
+              Extensive knowledge of SQL Server/ Amazon Web Services, Python, HTML/ CSS, and web development. 
+              <br><br>
+              Looking forward to bringing creativity, and problem-solving solutions to students. Passionate about creating lifelong 
+              learners by providing a safe and supportive environment that fosters collective responsibility for each student’s success.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p><span style="font-weight: bold; font-style: italic;">Learning</span> is definitely not mere imitation, nor is it the ability to accumulate and regurgitate fixed knowledge. <span style="font-weight: bold; font-style: italic;">Learning</span> is a constant process of discovery &#8212;a process without end. &#8211;Bruce Lee</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Docker <i class="val">45%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">AWS <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Creativity <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Tech Education <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Leadership <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Patience <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Emotional Intelligence  <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p></p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Dont&eacute; Jones</h4>
+              <p><em>I take pride in developing creative solutions to solve challenging problems. Solving problems without being restricted to ideas that have been done before and truly innovating. Education environments need more risk takers and diverse thinkers to find fresh perspectives.</em></p>
+              <ul>
+                <li>Emerald Campus Dublin, OH</li>
+                <li>xDonteJonesx@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Arts &amp; Education</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>The Ohio State University, Columbus, OH</em></p>
+              <p>Master of Educational Studies: Workforce Development &amp; Education</p>
+            </div>
+            <div class="resume-item">
+              <h4>Intensive Pedagogical Training Institute &amp; Industrial Technology Education</h4>
+              <h5>2018</h5>
+              <p><em>OEA, Columbus, OH</em></p>
+              
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Science &amp; Information Technology</h4>
+              <h5>2015 - 2017</h5>
+              <p><em>Wilberforce University, Rochester, NY</em></p>
+              
+            </div>
+            <div class="resume-item">
+              <h4>Associate of Science &amp; Interactive Multimedia</h4>
+              <h5>2000 - 2005</h5>
+              <p><em>Columbus State Community College, Columbus, OH</em></p>
+            </div>
+            
+            <h3 class="resume-title">Licensure</h3>
+            <div class="resume-item">
+              <h4>4 Year Alternative Resident Educator Career Technical Workforce Development</h4>
+              <h5>June 2018 - June 2022 </h5>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li> Business & Information Systems</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Apple Certified Mac Technician</h4>
+              <h5>August 2009</h5>
+              <ul>
+                <li>Apple Certified Macintosh Technician (ACMT)</li>
+                <li>Apple Certified Desktop Technician (ACDT)</li>
+                <li>Apple Certified Portable Technician (ACPT)</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Ohio Class A Commercial Driver License</h4>
+              <h5>August 2005</h5>
+              <ul>
+                <p>Endorsements</p>
+                <li>Double&#47;Tripple Trailers</li>
+                <li>Tank</li>
+                <li>Passenger</li>
+                <li>School Bus</li>
+                <li>Motorcycle</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Career Tech Educator &#124; Software Development</h4>
+              <h5>2018 - Present</h5>
+              <p><em>Dublin City Schools &amp; Tolles Tech, Dublin, OH </em></p>
+              <p>Responsible for educating both college and weighted high school credit students in the subjects of programming, object-oriented programming, database administration, Amazon Web Services, and web development.</p>
+              <ul>
+                <li>Design, plan, and implement the Computer Science curriculum and lessons.</li>
+                <li>Regularly communicate with Tolles, Dublin City Schools and Columbus State to facilitate records keeping for the District, State, and College mandates. </li>
+                <li>Collaborating with other content area colleagues to enrich student engagement using project-based learning.</li>
+                <li>Establish relationships with local business partners to establish internship opportunities for students.</li>
+                <li>Coordinate with staff, students, and the community to foster an engaging and standard-based learning environment that supported students to become college- and career-ready.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Computer Technician</h4>
+              <h5>2008 - 2018</h5>
+              <p><em>Dublin City Schools, Dublin, OH</em></p>
+              <p>Responsible for the daily operation of the district’s computer, data, and telecommunications network and e-mail systems.</p>
+              <ul>
+                <li>Communicate with district staff to ensure that appropriate services are available.</li>
+                <li>Collaborate with students and staff to introduce coding and robotics.</li>
+                <li>Implement software solutions to enhance students’ ability to demonstrate content knowledge.</li>
+                <li>Worked with Media Specialist to implement and maintain the district's ﬁrst Fab Lab.</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Database &amp; Systems Manager</h4>
+              <h5>2006 - 2008</h5>
+              <p><em>Custom Apperal LLC, Columbus, OH</em></p>
+              <p>Responsible for the daily operation of the company’s computer, point of sale, network, and databse systems.</p>
+              <ul>
+                <li>Installed and maintained company wired and wireless networks.</li>
+                <li>Create organization level backup policy for user and server systems.</li>
+                <li>Deployment  and maintenance of company production servers.</li>
+                <li>Deploy client and server software and maintain updates.</li>
+                <li>Responsible for systems security policies.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>District Bus Driver</h4>
+              <h5>2007 - 2008</h5>
+              <p><em>Dublin City Schools, Dublin, OH</em></p>
+              <p>Responsible for the safety and daily pickup &#47; delivery of distric students with a commercial motor vehicle wheighing 26,000lbs or more.</p>
+              <ul>
+                <li>Operated District School Bus.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Encouraging Words</h2>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/julia-testimonial-1.jpg" class="testimonial-img" alt="">
+                <h3>Julia Chen</h3>
+                <h4>Former Student</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I really appreciate you for teaching me, helping me and caring about me these two years; I am not very good at expressing my feelings in words, but I want to thank you so much for listening and giving me wonderful advice.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/shagnik-testimonial-2.jpg" class="testimonial-img" alt="">
+                <h3>Shagnik Sarkar</h3>
+                <h4>Former Student</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I had no experience at all, but you were super helpful whenever any of us had trouble with assignments. Overall you’ve been a great and friendly teacher.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/safa-testimonial-3.jpg" class="testimonial-img" alt="">
+                <h3>Safa Darwish</h3>
+                <h4>Former Student</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I would not have had a better learning experience in any other class. You have taught me so much about leadership skills and resilience, and you gave me the chances to grow when I needed them. I have learned so much about tech and programming in your classes beyond any high school curriculum, and I had so much fun while doing it.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/brady-testimonial-4.jpg" class="testimonial-img" alt="">
+                <h3>Brady Walsh</h3>
+                <h4>Former Student</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Thanks for being a genuinely great teacher. Honestly my favorite class and favorite teacher for the last 2 years.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Dont&eacute; Jones</h3>
+      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <div class="social-links">
+        <a href="https://github.com/TollesDJones" class="instagram"><i class="bx bxl-github"></i></a>
+        <a href="https://discordapp.com/users/511710226223857684" class="google-plus"><i class="bx bxl-discord"></i></a>
+        <a href="https://www.linkedin.com/in/donte-jones-1573411a0" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Dont&eacute; Jones</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
